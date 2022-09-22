@@ -123,9 +123,10 @@ document.getElementById("sub-10s").addEventListener('click', (e) => {
 
 document.getElementById("add-10s").addEventListener('click', (e) => {
 	if (parseInt(document.getElementById("play-music").currentTime)+5 < srcSeconds) {
-		document.getElementById("play-music").currentTime = toString(document.getElementById("play-music").currentTime + 5);
+		document.getElementById("play-music").currentTime = document.getElementById("play-music").currentTime + 5;
 	}else{
-		document.getElementById("play-music").currentTime = toString(srcSeconds-1);
+		document.getElementById("play-music").currentTime = srcSeconds-1;
 	}
 });
+
 
