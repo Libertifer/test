@@ -1,1 +1,46 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <script type="text/babel" src="js/app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+		<audio id="play-music">
+			<source id="source-music" src="audio/" type="audio/ogg">
+		</audio>
+		<header id="header"></header>
+  	<main id="main">
+  		<table>
+  			<thead>
+  				<tr>
+  					<th>Name</th>
+  					<th>Duration</th>
+  					<th>Genre</th>
+  					<th>Tempo</th>
+  					<th>Feel</th>
+  				</tr>
+  			</thead>
+  			<tbody id="music-list">
+  			</tbody>
+  		</table>
+  	</main>
+  	<footer id="footer">
+			<h1 id="title-music">[TITLE NAME]</h1>
+			<div id="player-controls">
+				<i id="play-button" class="fa fa-play" aria-hidden="true"></i> 
+				<i id="stop-button" class="fa fa-stop" aria-hidden="true"></i> 
+				<i id="sub-10s" class="fa fa-backward" aria-hidden="true"></i>
+				<span id="current-time">0:00</span>
+				<input type="range" id="player-slider" min="0" max="1" />
+				<span id="duration-time">0:00</span>
+				<i id="add-10s" class="fa fa-forward" aria-hidden="true"></i> 
+				<i id="toggle-loop" class="fa fa-undo no-loop" aria-hidden="true"></i> 
+			</div>
+  	</footer>
+  </body>
+</html>

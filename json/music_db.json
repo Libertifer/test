@@ -1,0 +1,31 @@
+{
+	"musicList": [
+		{
+			"title":"Sample 1",
+			"duration":"1:52",
+			"seconds":112,
+			"genre":"Electronica",
+			"tempo":"144 bpm",
+			"feel":"Action",
+			"source":"Going dark.ogg"
+		},
+		{
+			"title":"Sample 2",
+			"duration":"1:52",
+			"seconds":112,
+			"genre":"Rock",
+			"tempo":"124 bpm",
+			"feel":"Dark",
+			"source":"Going dark.ogg"
+		},
+		{
+			"title":"Sample 3",
+			"duration":"1:52",
+			"seconds":112,
+			"genre":"Classic",
+			"tempo":"90 bpm",
+			"feel":"Calming",
+			"source":"Going dark.ogg"
+		}
+	]
+}
