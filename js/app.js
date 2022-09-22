@@ -32,7 +32,7 @@ const headerElement = (
 
 function MusicInfo(props) {
 	const playMusic = () => {
-		document.getElementById("source-music").src = "http://localhost:8080/audio/"+props.info['source'];
+		document.getElementById("source-music").src = "audio/"+props.info['source'];
 		document.getElementById("title-music").innerHTML = props.info['title'];
 		srcDuration = props.info['duration'];
 		srcSeconds = props.info['seconds'] ;
