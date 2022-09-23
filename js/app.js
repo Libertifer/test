@@ -13,7 +13,6 @@ function getMusicList() {
      	data = response;
     }
   });
-  console.log(data.musicList);
   return data.musicList;
 }
 
@@ -34,8 +33,11 @@ function MusicInfo(props) {
 	const playMusic = () => {
 		document.getElementById("source-music").src = "audio/"+props.info['source'];
 		document.getElementById("title-music").innerHTML = props.info['title'];
-		srcDuration = props.info['duration'];
-		srcSeconds = props.info['seconds'] ;
+		srcSeconds = document.getElementById("play-music").duration ;
+		srcDuration = toString(parseInt(srcSeconds/60))+":";
+		if (srcSeconds%60 >= 10) {
+			srcDuration += toString(parseInt(srcSeconds%60));
+		}
 		document.getElementById("play-music").load();
 		document.getElementById("play-music").play();
 	}
