@@ -7,7 +7,7 @@
 			"genre":"Electronica",
 			"tempo":"144 bpm",
 			"feel":"Action",
-			"source":"Going dark.ogg"
+			"source":"sample_file.ogg"
 		},
 		{
 			"title":"Sample 2",
@@ -16,7 +16,7 @@
 			"genre":"Rock",
 			"tempo":"124 bpm",
 			"feel":"Dark",
-			"source":"Going dark.ogg"
+			"source":"sample_file.ogg"
 		},
 		{
 			"title":"Sample 3",
@@ -25,7 +25,7 @@
 			"genre":"Classic",
 			"tempo":"90 bpm",
 			"feel":"Calming",
-			"source":"Going dark.ogg"
+			"source":"sample_file.ogg"
 		}
 	]
 }
