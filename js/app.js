@@ -37,7 +37,10 @@ function MusicInfo(props) {
 		srcDuration = toString(parseInt(srcSeconds/60))+":";
 		if (srcSeconds%60 >= 10) {
 			srcDuration += toString(parseInt(srcSeconds%60));
+		}else{
+			srcDuration += "0"+toString(parseInt(srcSeconds%60));
 		}
+		alert(srcDuration);
 		document.getElementById("play-music").load();
 		document.getElementById("play-music").play();
 	}
