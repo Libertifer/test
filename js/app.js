@@ -79,6 +79,10 @@ document.getElementById('play-music').addEventListener('playing', (e) => {
 	document.getElementById('play-button').className = "fa fa-pause";
 });
 
+document.getElementById('play-music').addEventListener('ended', (e) => {
+	document.getElementById('play-button').className = "fa fa-play";
+});
+
 document.getElementById("play-button").addEventListener('click', (e) => {
 	if (document.getElementById("play-music").paused) {
 		document.getElementById("play-music").play();
