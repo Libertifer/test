@@ -71,7 +71,7 @@ header.render(headerElement);
 
 document.getElementById('play-music').addEventListener('loadedmetadata', (e) => {
 	document.getElementById("player-slider").max = srcSeconds;
-	document.getElementById("duration-time").innerHTML = srcDuration;
+	document.getElementById("duration-time").innerHTML = (document.getElementById('play-music').duration)%60 >= 10 ? parseInt((document.getElementById('play-music').duration)/60)+":"+parseInt((document.getElementById('play-music').duration)%60) : parseInt((document.getElementById('play-music').duration)/60)+":0"+parseInt((document.getElementById('play-music').duration)%60);
 });
 
 document.getElementById('play-music').addEventListener('timeupdate', (e) => {
