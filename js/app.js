@@ -16,19 +16,6 @@ function getMusicList() {
   return data.musicList;
 }
 
-const headerElement = (
-	<>
-		<h1><a href="/">Korppi's Jukebox</a></h1>
-		<nav>
-			<a href="jukebox">Royalty-free music</a>
-			<a href="contact">Contact</a>
-			<a href="donate">Donate</a>
-			<a href="faq">FAQ</a>
-		</nav>
-	</>
-);
-
-
 function MusicInfo(props) {
 	const playMusic = () => {
 		document.getElementById("source-music").src = "audio/"+props.info['source'];
@@ -56,10 +43,8 @@ function MusicList() {
   );
 }
 
-const header = ReactDOM.createRoot(document.getElementById('header'));
 const music = ReactDOM.createRoot(document.getElementById('music-list'));
 music.render(<MusicList />);
-header.render(headerElement);
 
 document.getElementById('play-music').addEventListener('loadedmetadata', (e) => {
 	srcSeconds = parseInt(document.getElementById('play-music').duration);
