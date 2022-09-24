@@ -149,3 +149,7 @@ footer > div > span {
 iframe {
 	border: 0;
 }
+p {
+	font-family: var(--font-family);
+	color: var(--white);
+}
