@@ -33,7 +33,6 @@ function MusicInfo(props) {
 	const playMusic = () => {
 		document.getElementById("source-music").src = "audio/"+props.info['source'];
 		document.getElementById("title-music").innerHTML = props.info['title'];
-		srcSeconds = document.getElementById("play-music").duration ;
 		document.getElementById("play-music").load();
 		document.getElementById("play-music").play();
 	}
@@ -63,7 +62,8 @@ music.render(<MusicList />);
 header.render(headerElement);
 
 document.getElementById('play-music').addEventListener('loadedmetadata', (e) => {
-	document.getElementById("player-slider").max = parseInt(document.getElementById('play-music').duration);
+	srcSeconds = parseInt(document.getElementById('play-music').duration);
+	document.getElementById("player-slider").max = srcSeconds;
 	document.getElementById("duration-time").innerHTML = (document.getElementById('play-music').duration)%60 >= 10 ? parseInt((document.getElementById('play-music').duration)/60)+":"+parseInt((document.getElementById('play-music').duration)%60) : parseInt((document.getElementById('play-music').duration)/60)+":0"+parseInt((document.getElementById('play-music').duration)%60);
 });
 
